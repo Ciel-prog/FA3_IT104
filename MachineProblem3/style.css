@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9fafc;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eaeef5;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group label i {
+    color: #4b6cb7;
+}
+
+textarea, input[type="text"] {
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+textarea:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #4b6cb7;
+    box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.1);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: monospace;
+}
+
+#replaceBtn {
+    background: linear-gradient(to right, #4b6cb7, #3a56a4);
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+#replaceBtn:hover {
+    background: linear-gradient(to right, #3a56a4, #2d4578);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(75, 108, 183, 0.3);
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.output-section h2 {
+    color: #2d3748;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.output-box {
+    background-color: #edf2f7;
+    border-radius: 8px;
+    padding: 25px;
+    min-height: 80px;
+    border-left: 5px solid #4b6cb7;
+}
+
+#outputText {
+    font-size: 1.4rem;
+    color: #2d3748;
+    font-weight: 500;
+    font-family: monospace;
+    word-break: break-word;
+}
+
+.example-section, .hint-section {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eaeef5;
+}
+
+.example-section h3, .hint-section h3 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #edf2f7;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+table td {
+    background-color: white;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9fafc;
+}
+
+.hint-section p {
+    font-size: 1.05rem;
+    color: #4a5568;
+}
+
+code {
+    background-color: #e2e8f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #f1f5f9;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+    
+    .input-section {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
