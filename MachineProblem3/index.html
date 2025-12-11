@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplaceWord - Machine Problem 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-exchange-alt"></i> ReplaceWord</h1>
+            <p class="subtitle">Machine Problem 3: Replace the first occurrence of a word in a sentence</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="sentenceInput">
+                        <i class="fas fa-paragraph"></i> Enter a sentence:
+                    </label>
+                    <textarea id="sentenceInput" placeholder="Example: I love PHP">I love PHP</textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="wordToReplace">
+                        <i class="fas fa-search"></i> Word to replace:
+                    </label>
+                    <input type="text" id="wordToReplace" placeholder="Example: PHP" value="PHP">
+                </div>
+                
+                <div class="input-group">
+                    <label for="replacementWord">
+                        <i class="fas fa-pencil-alt"></i> Replacement word:
+                    </label>
+                    <input type="text" id="replacementWord" placeholder="Example: JavaScript" value="JavaScript">
+                </div>
+                
+                <button id="replaceBtn">
+                    <i class="fas fa-sync-alt"></i> Replace Word
+                </button>
+            </div>
+            
+            <div class="output-section">
+                <h2><i class="fas fa-result"></i> Result</h2>
+                <div class="output-box">
+                    <p id="outputText">I love JavaScript</p>
+                </div>
+                
+                <div class="example-section">
+                    <h3><i class="fas fa-table"></i> Example from Problem</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Input</th>
+                                <th>Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>I love PHP<br>PHP<br>JavaScript</td>
+                                <td>I love JavaScript</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="hint-section">
+                    <h3><i class="fas fa-lightbulb"></i> Hint</h3>
+                    <p>Use the <code>replace()</code> method to change one word into another.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Machine Problem 3: ReplaceWord | Uses only the first occurrence of the word</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
